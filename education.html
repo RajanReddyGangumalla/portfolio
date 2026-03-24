@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education | Gangumalla Rajan Reddy Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="progress.html">Progress</a></li>
+                <li><a href="education.html" class="active">Education</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="certificates.html">Certificates</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Education</h1>
+            <h2>Academic Background & Qualifications</h2>
+            <p>My educational journey and qualifications that have shaped my technical expertise and professional growth.</p>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <section id="formal-education">
+                <h2>Formal Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Bachelor of Technology - Computer Science Engineering (AI&ML)</h3>
+                            <p><strong>Lovely Professional University</strong> | Aug 2023 - Present</p>
+                            <p>CGPA: 7.6</p>
+                            <ul>
+                                <li>Specialization in Artificial Intelligence & Machine Learning</li>
+                                <li>Relevant Coursework: Data Structures, Algorithms, Machine Learning, Deep Learning, Database Systems</li>
+                                <li>Active participant in technical workshops and hackathons</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Intermediate Education</h3>
+                            <p><strong>Narayana Junior College</strong> | Jun 2022 - May 2023</p>
+                            <p>CGPA: 9.0</p>
+                            <ul>
+                                <li>Stream: Mathematics, Physics, Chemistry, Computer Science</li>
+                                <li>Strong foundation in science and mathematics</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Matriculation</h3>
+                            <p><strong>Geetha High School</strong> | Jun 2020 - May 2021</p>
+                            <p>CGPA: 10.0</p>
+                            <ul>
+                                <li>Perfect score in high school education</li>
+                                <li>Excellence in Mathematics and Science</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="online-certifications">
+                <h2>Online Certifications & Courses</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3><i class="fab fa-graduation-cap"></i> Professional Training</h3>
+                        <ul>
+                            <li>Android Developer Pro - LPU Skill Development (Jun 2025 - Aug 2025)</li>
+                            <li>Hands-on training in app development and deployment</li>
+                            <li>Experience in building Android applications and database management</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="achievements">
+                <h2>Academic Achievements</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3><i class="fas fa-trophy"></i> Academic Excellence</h3>
+                        <ul>
+                            <li>Perfect CGPA (10.0) in Matriculation</li>
+                            <li>Strong academic performance (9.0 CGPA) in Intermediate</li>
+                            <li>Active participation in Code-off-Duty Hackathon</li>
+                            <li>Continuous learning in AI & Machine Learning</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3><i class="fas fa-code"></i> Technical Competitions</h3>
+                        <ul>
+                            <li>Participated in Code-off-Duty Hackathon</li>
+                            <li>Active involvement in technical workshops</li>
+                            <li>Machine learning project competitions</li>
+                            <li>Android development challenges</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="research-publications">
+                <h2>Research & Publications</h2>
+                <div class="card">
+                    <h3>Academic Projects & Research</h3>
+                    <ul>
+                        <li><strong>Customer Churn Prediction:</strong> Machine learning project using Logistic Regression with Streamlit web application</li>
+                        <li><strong>Email Spam Classifier:</strong> NLP project using Naïve Bayes, Logistic Regression, and SVM algorithms</li>
+                        <li><strong>Android Applications:</strong> Multiple mobile apps developed during professional training</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/RajanReddyGangumalla" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/rajanreddy08" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:rajanreddyg53@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2024 Gangumalla Rajan Reddy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Add active class to navigation based on current page
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            const navLinks = document.querySelectorAll('nav ul li a');
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

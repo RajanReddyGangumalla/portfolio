@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates | Gangumalla Rajan Reddy Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="progress.html">Progress</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="certificates.html" class="active">Certificates</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Certificates</h1>
+            <h2>Professional Certifications & Achievements</h2>
+            <p>A collection of certificates and professional credentials that validate my expertise and commitment to continuous learning.</p>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <section id="technical-certificates">
+                <h2>Technical Certifications</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3><i class="fas fa-robot"></i> ChatGPT-4 Prompt Engineering</h3>
+                        <p><strong>Issued by:</strong> Springboard</p>
+                        <p><strong>Date:</strong> August 2025</p>
+                        <p>Advanced prompt engineering techniques for maximizing AI model performance and productivity.</p>
+                        <div class="project-links">
+                            <a href="https://drive.google.com/file/d/11HeD8hV1QxtnIUpJDkAOjwJyWxJTnlV2/view" target="_blank" class="project-link">
+                                <i class="fas fa-certificate"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3><i class="fas fa-network-wired"></i> The Bits and Bytes of Computer Networking</h3>
+                        <p><strong>Issued by:</strong> Coursera</p>
+                        <p><strong>Date:</strong> September 2024</p>
+                        <p>Comprehensive understanding of computer networking fundamentals, protocols, and infrastructure.</p>
+                        <div class="project-links">
+                            <a href="https://drive.google.com/file/d/1gkZ-2rFxj3AoCwmmBUhBoAbSYUh3QOQJ/view" target="_blank" class="project-link">
+                                <i class="fas fa-certificate"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3><i class="fas fa-brain"></i> Machine Learning</h3>
+                        <p><strong>Issued by:</strong> Simplilearn</p>
+                        <p><strong>Date:</strong> October 2023</p>
+                        <p>Foundational to advanced machine learning concepts including supervised and unsupervised learning algorithms.</p>
+                        <div class="project-links">
+                            <a href="https://drive.google.com/file/d/1VPwMVoxR-5__tR2UeCZ8YuB3m53xynlV/view" target="_blank" class="project-link">
+                                <i class="fas fa-certificate"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="badge-showcase">
+                <h2>Professional Training</h2>
+                <div class="card">
+                    <h3><i class="fas fa-certificate"></i> Professional Training</h3>
+                    <h4>Android Developer Pro - LPU Skill Development</h4>
+                    <p><strong>Duration:</strong> June 2025 - August 2025</p>
+                    <p>Hands-on training covering:</p>
+                    <ul>
+                        <li>Android app development fundamentals</li>
+                        <li>UI/UX design for mobile applications</li>
+                        <li>Database integration with Firebase</li>
+                        <li>App deployment and publishing</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://files.lpu.in/umsweb/skilldevcourse/SkillDevelopmentCertificates/12307217_840_20_08_2025.pdf?_gl=1*1k7nyht*_gcl_au*OTQ1NTk4MTY0LjE3NjQyMzUyNDc.*_ga*OTk1NDI5NzUxLjE3MTExODk2NjY.*_ga_WKLQCVXZ47*czE3NjQyMzUyNDYkbzIzJGcxJHQxNzY0MjM1Mjg2JGoyMCRsMCRoMA.." target="_blank" class="project-link">
+                            <i class="fas fa-certificate"></i> View Certificate
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/RajanReddyGangumalla" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/rajanreddy08" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:rajanreddyg53@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2024 Gangumalla Rajan Reddy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Add active class to navigation based on current page
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            const navLinks = document.querySelectorAll('nav ul li a');
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
